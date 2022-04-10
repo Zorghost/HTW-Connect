@@ -51,10 +51,10 @@ public:
         label_2->setGeometry(QRect(280, 240, 49, 16));
         lineEdit = new QLineEdit(centralwidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(280, 180, 113, 22));
+        lineEdit->setGeometry(QRect(280, 180, 171, 22));
         lineEdit_2 = new QLineEdit(centralwidget);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(280, 260, 113, 22));
+        lineEdit_2->setGeometry(QRect(280, 260, 171, 22));
         lineEdit_2->setInputMethodHints(Qt::ImhHiddenText|Qt::ImhSensitiveData);
         Login->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Login);

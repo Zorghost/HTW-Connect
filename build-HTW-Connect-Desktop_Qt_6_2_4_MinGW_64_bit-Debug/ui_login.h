@@ -30,6 +30,7 @@ public:
     QLabel *label_2;
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
+    QLabel *label_3;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -56,6 +57,9 @@ public:
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
         lineEdit_2->setGeometry(QRect(280, 260, 171, 22));
         lineEdit_2->setInputMethodHints(Qt::ImhHiddenText|Qt::ImhSensitiveData);
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(598, 10, 161, 20));
         Login->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Login);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -76,6 +80,7 @@ public:
         pushButton->setText(QCoreApplication::translate("Login", "Login", nullptr));
         label->setText(QCoreApplication::translate("Login", "username", nullptr));
         label_2->setText(QCoreApplication::translate("Login", "Password", nullptr));
+        label_3->setText(QCoreApplication::translate("Login", "Not connected to db", nullptr));
     } // retranslateUi
 
 };

@@ -1,7 +1,11 @@
 #ifndef LOGIN_H
 #define LOGIN_H
+
 #include "chat.h"
 #include <QMainWindow>
+#include <QtSql>
+#include <QDebug>
+#include <QFileInfo>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Login; }
@@ -21,5 +25,6 @@ private slots:
 private:
     Ui::Login *ui;
     chat *chat;
+    QSqlDatabase mydb;
 };
 #endif // LOGIN_H

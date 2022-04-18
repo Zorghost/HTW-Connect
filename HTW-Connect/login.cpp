@@ -1,6 +1,7 @@
 #include "login.h"
+#include "ui_chat.h"
 #include "ui_login.h"
-
+#include <QMessageBox>
 Login::Login(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Login)
@@ -17,12 +18,16 @@ Login::Login(QWidget *parent)
 Login::~Login()
 {
     delete ui;
+
 }
 
 
 void Login::on_pushButton_clicked()
 {
-    QString username, password;
+
+
+
+
     username = ui->lineEdit->text();
     password = ui->lineEdit_2->text();
 
@@ -45,8 +50,26 @@ void Login::on_pushButton_clicked()
         hide();
         chat = new class::chat(this);
         chat->show();
+        chat->ui->label_5->setText(username);
 
         }
+        else {
+        QMessageBox::information(this , tr("Message"), tr("wrong or empty password/username"));
     }
+
+}
+}
+
+void Login::on_label_4_linkActivated(const QString &link)
+{
+
+}
+
+
+void Login::on_pushButton_2_clicked()
+{
+    hide();
+    regis = new class::Register(this);
+    regis->show();
 }
 

@@ -31,6 +31,7 @@ public:
     QLineEdit *lineEdit;
     QLineEdit *lineEdit_2;
     QLabel *label_3;
+    QPushButton *pushButton_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -43,7 +44,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(330, 330, 75, 24));
+        pushButton->setGeometry(QRect(320, 360, 75, 24));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(280, 160, 71, 16));
@@ -60,6 +61,9 @@ public:
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(598, 10, 161, 20));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(420, 360, 75, 24));
         Login->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Login);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -81,6 +85,7 @@ public:
         label->setText(QCoreApplication::translate("Login", "username", nullptr));
         label_2->setText(QCoreApplication::translate("Login", "Password", nullptr));
         label_3->setText(QCoreApplication::translate("Login", "Not connected to db", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Login", "Register", nullptr));
     } // retranslateUi
 
 };

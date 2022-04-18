@@ -12,11 +12,13 @@ class chat : public QDialog
     Q_OBJECT
 
 public:
+
     explicit chat(QWidget *parent = nullptr);
     ~chat();
-
-private:
+    QString normal ;
+public :
     Ui::chat *ui;
+
 };
 
 #endif // CHAT_H

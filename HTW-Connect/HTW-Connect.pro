@@ -11,15 +11,18 @@ CONFIG += c++17
 SOURCES += \
     chat.cpp \
     main.cpp \
-    login.cpp
+    login.cpp \
+    register.cpp
 
 HEADERS += \
     chat.h \
-    login.h
+    login.h \
+    register.h
 
 FORMS += \
     chat.ui \
-    login.ui
+    login.ui \
+    register.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

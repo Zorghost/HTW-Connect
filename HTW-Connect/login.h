@@ -2,6 +2,7 @@
 #define LOGIN_H
 
 #include "chat.h"
+#include "register.h"
 #include <QMainWindow>
 #include <QtSql>
 #include <QDebug>
@@ -18,13 +19,21 @@ class Login : public QMainWindow
 public:
     Login(QWidget *parent = nullptr);
     ~Login();
+    QString username, password ;
 
 private slots:
     void on_pushButton_clicked();
 
+    void on_label_4_linkActivated(const QString &link);
+
+    void on_pushButton_2_clicked();
+
 private:
+    QSqlDatabase mydb;
     Ui::Login *ui;
     chat *chat;
-    QSqlDatabase mydb;
+    Register *regis ;
+
+
 };
 #endif // LOGIN_H

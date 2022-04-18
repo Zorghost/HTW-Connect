@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>330</y>
+      <x>320</x>
+      <y>360</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -87,6 +87,19 @@
     </property>
     <property name="text">
      <string>Not connected to db</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>360</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Register</string>
     </property>
    </widget>
   </widget>

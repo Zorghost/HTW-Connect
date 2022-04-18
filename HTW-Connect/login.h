@@ -1,8 +1,6 @@
 #ifndef LOGIN_H
 #define LOGIN_H
-
 #include "chat.h"
-#include "register.h"
 #include <QMainWindow>
 #include <QtSql>
 #include <QDebug>
@@ -12,6 +10,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class Login; }
 QT_END_NAMESPACE
 
+class Register;
 class Login : public QMainWindow
 {
     Q_OBJECT
@@ -32,7 +31,7 @@ private:
     QSqlDatabase mydb;
     Ui::Login *ui;
     chat *chat;
-    Register *regis ;
+
 
 
 };

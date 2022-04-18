@@ -1,8 +1,6 @@
 #ifndef CHAT_H
 #define CHAT_H
-
 #include <QDialog>
-
 namespace Ui {
 class chat;
 }

@@ -1,6 +1,7 @@
 #include "register.h"
 #include "ui_register.h"
 #include "QMessageBox"
+#include "login.h"
 Register::Register(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Register)
@@ -41,8 +42,9 @@ void Register::on_pushButton_clicked()
 
 void Register::on_pushButton_2_clicked()
 {
+    Login *logo;
     hide();
-   //login = new class::Login(this);
-   //login->show();
+   logo = new class::Login(this);
+   logo->show();
 }
 

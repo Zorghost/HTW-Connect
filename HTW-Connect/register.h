@@ -1,7 +1,10 @@
 #ifndef REGISTER_H
 #define REGISTER_H
+#include "login.h"
 #include <QDialog>
+
 #include "chat.h"
+
 
 namespace Ui {
 class Register;
@@ -24,7 +27,8 @@ private:
     Ui::Register *ui;
    // QSqlDatabase mydb;
     chat *chat;
-    //Login *login;
+
+
 };
 
 #endif // REGISTER_H

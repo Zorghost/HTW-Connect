@@ -1,5 +1,5 @@
 #include "login.h"
-
+#include "chat.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

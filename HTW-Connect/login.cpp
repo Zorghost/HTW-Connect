@@ -1,6 +1,7 @@
 #include "login.h"
 #include "ui_chat.h"
 #include "ui_login.h"
+#include "register.h"
 #include <QMessageBox>
 Login::Login(QWidget *parent)
     : QMainWindow(parent)
@@ -11,8 +12,10 @@ Login::Login(QWidget *parent)
     mydb = QSqlDatabase::addDatabase("QSQLITE");
     mydb.setDatabaseName("C:/Users/Altar/Desktop/Git/HTW-Connect/Database/Database.db");
 
+
     if(mydb.open())
         ui->label_3->setText("Connected to db");
+
 }
 
 Login::~Login()
@@ -68,6 +71,7 @@ void Login::on_label_4_linkActivated(const QString &link)
 
 void Login::on_pushButton_2_clicked()
 {
+    Register *regis ;
     hide();
     regis = new class::Register(this);
     regis->show();

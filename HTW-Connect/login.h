@@ -1,6 +1,8 @@
 #ifndef LOGIN_H
 #define LOGIN_H
 #include "chat.h"
+#include "professor.h"
+#include "student.h"
 #include <QMainWindow>
 #include <QtSql>
 #include <QDebug>
@@ -31,6 +33,8 @@ private:
     QSqlDatabase mydb;
     Ui::Login *ui;
     chat *chat;
+    professor *professor;
+    student *student;
 
 
 

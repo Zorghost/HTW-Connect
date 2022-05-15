@@ -12,17 +12,26 @@ SOURCES += \
     chat.cpp \
     main.cpp \
     login.cpp \
-    register.cpp
+    nachrichten.cpp \
+    professor.cpp \
+    register.cpp \
+    student.cpp
 
 HEADERS += \
     chat.h \
     login.h \
-    register.h
+    nachrichten.h \
+    professor.h \
+    register.h \
+    student.h
 
 FORMS += \
     chat.ui \
     login.ui \
-    register.ui
+    nachrichten.ui \
+    professor.ui \
+    register.ui \
+    student.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

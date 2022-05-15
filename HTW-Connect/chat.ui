@@ -85,7 +85,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Rooms</string>
+    <string>Studiengänge</string>
    </property>
   </widget>
   <widget class="QListWidget" name="listWidget">
@@ -105,49 +105,36 @@
    </property>
    <item>
     <property name="text">
-     <string>General</string>
+     <string>Ingenieurinformatik</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>Mechatronik 3</string>
+     <string>Angewandte Informatik</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>Programmierung 2</string>
+     <string>Bauingenieurwesen</string>
     </property>
    </item>
-  </widget>
-  <widget class="QListView" name="listView_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>310</y>
-     <width>201</width>
-     <height>231</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>290</y>
-     <width>201</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Contacts</string>
-   </property>
+   <item>
+    <property name="text">
+     <string>Computer Engineering</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Elektrotechnik</string>
+    </property>
+   </item>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>610</y>
-     <width>71</width>
+     <width>171</width>
      <height>16</height>
     </rect>
    </property>
@@ -158,52 +145,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Welcome </string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>610</y>
-     <width>91</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>13</pointsize>
-     <italic>true</italic>
-    </font>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>550</y>
-     <width>75</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>550</y>
-     <width>75</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Delete</string>
+    <string>Welcome To The Chat</string>
    </property>
   </widget>
   <zorder>plainTextEdit</zorder>
@@ -213,12 +155,7 @@
   <zorder>listWidget_2</zorder>
   <zorder>label_2</zorder>
   <zorder>listWidget</zorder>
-  <zorder>listView_2</zorder>
-  <zorder>label_3</zorder>
   <zorder>label_4</zorder>
-  <zorder>label_5</zorder>
-  <zorder>pushButton_2</zorder>
-  <zorder>pushButton_3</zorder>
  </widget>
  <resources/>
  <connections/>

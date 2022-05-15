@@ -1,0 +1,13 @@
+release/chat.o
+release/main.o
+release/login.o
+release/nachrichten.o
+release/professor.o
+release/register.o
+release/student.o
+release/moc_chat.o
+release/moc_login.o
+release/moc_nachrichten.o
+release/moc_professor.o
+release/moc_register.o
+release/moc_student.o

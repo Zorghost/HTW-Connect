@@ -1,0 +1,13 @@
+debug/chat.o
+debug/main.o
+debug/login.o
+debug/nachrichten.o
+debug/professor.o
+debug/register.o
+debug/student.o
+debug/moc_chat.o
+debug/moc_login.o
+debug/moc_nachrichten.o
+debug/moc_professor.o
+debug/moc_register.o
+debug/moc_student.o

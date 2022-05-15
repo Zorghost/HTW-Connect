@@ -1,4 +1,6 @@
 #include "login.h"
+#include "professor.h"
+#include "student.h"
 #include "ui_chat.h"
 #include "ui_login.h"
 #include "register.h"
@@ -43,6 +45,7 @@ void Login::on_pushButton_clicked()
 
     if(qry.exec("select * from users where username='"+username+"'and password='"+password+"'"))
     {
+
         int count = 0 ;
         while(qry.next())
         {
@@ -50,11 +53,28 @@ void Login::on_pushButton_clicked()
         }
         if(count==1)
         {
-        hide();
-        chat = new class::chat(this);
-        chat->show();
-        chat->ui->label_5->setText(username);
-
+            QString d = "professor" ;
+            QSqlQuery qry1;
+            if(qry1.exec("select * from users where username='"+username+"'and type='"+d+"'"))
+            {
+                int count1 = 0 ;
+                while(qry1.next())
+                {
+                    count1++;
+                }
+                if(count1==1)
+         {
+             hide();
+             professor = new class::professor(this);
+             professor->show();
+         }
+        else
+         {
+             hide();
+             student = new class::student(this);
+            student->show();
+         }
+           }
         }
         else {
         QMessageBox::information(this , tr("Message"), tr("wrong or empty password/username"));
@@ -76,4 +96,6 @@ void Login::on_pushButton_2_clicked()
     regis = new class::Register(this);
     regis->show();
 }
+
+
 

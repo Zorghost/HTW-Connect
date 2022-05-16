@@ -15,6 +15,9 @@ public:
     explicit nachrichten(QWidget *parent = nullptr);
     ~nachrichten();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::nachrichten *ui;
 };

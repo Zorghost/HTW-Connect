@@ -14,6 +14,7 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QListView>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
@@ -31,10 +32,10 @@ public:
     QLabel *label_3;
     QLineEdit *lineEdit;
     QLabel *label_4;
-    QScrollArea *scrollArea;
-    QWidget *scrollAreaWidgetContents;
     QScrollArea *scrollArea_2;
     QWidget *scrollAreaWidgetContents_2;
+    QListView *listView;
+    QPushButton *pushButton_2;
 
     void setupUi(QDialog *nachrichten)
     {
@@ -46,7 +47,7 @@ public:
         label->setGeometry(QRect(168, 30, 121, 20));
         label_2 = new QLabel(nachrichten);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(610, 70, 81, 16));
+        label_2->setGeometry(QRect(610, 20, 81, 16));
         plainTextEdit = new QPlainTextEdit(nachrichten);
         plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
         plainTextEdit->setEnabled(true);
@@ -64,22 +65,20 @@ public:
         label_4 = new QLabel(nachrichten);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(80, 420, 141, 16));
-        scrollArea = new QScrollArea(nachrichten);
-        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setGeometry(QRect(570, 100, 201, 281));
-        scrollArea->setWidgetResizable(true);
-        scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 199, 279));
-        scrollArea->setWidget(scrollAreaWidgetContents);
         scrollArea_2 = new QScrollArea(nachrichten);
         scrollArea_2->setObjectName(QString::fromUtf8("scrollArea_2"));
-        scrollArea_2->setGeometry(QRect(100, 80, 311, 301));
+        scrollArea_2->setGeometry(QRect(100, 80, 321, 311));
         scrollArea_2->setWidgetResizable(true);
         scrollAreaWidgetContents_2 = new QWidget();
         scrollAreaWidgetContents_2->setObjectName(QString::fromUtf8("scrollAreaWidgetContents_2"));
-        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 309, 299));
+        scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 319, 309));
         scrollArea_2->setWidget(scrollAreaWidgetContents_2);
+        listView = new QListView(nachrichten);
+        listView->setObjectName(QString::fromUtf8("listView"));
+        listView->setGeometry(QRect(510, 50, 256, 341));
+        pushButton_2 = new QPushButton(nachrichten);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(690, 410, 75, 24));
 
         retranslateUi(nachrichten);
 
@@ -94,6 +93,7 @@ public:
         pushButton->setText(QCoreApplication::translate("nachrichten", "send", nullptr));
         label_3->setText(QCoreApplication::translate("nachrichten", "To :", nullptr));
         label_4->setText(QCoreApplication::translate("nachrichten", "Nachricht senden : ", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("nachrichten", "Refresh", nullptr));
     } // retranslateUi
 
 };

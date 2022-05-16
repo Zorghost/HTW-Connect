@@ -52,7 +52,7 @@
     <enum>QFrame::Sunken</enum>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="send">
    <property name="geometry">
     <rect>
      <x>910</x>
@@ -63,16 +63,6 @@
    </property>
    <property name="text">
     <string>send</string>
-   </property>
-  </widget>
-  <widget class="QListWidget" name="listWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>215</x>
-     <y>31</y>
-     <width>781</width>
-     <height>511</height>
-    </rect>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -87,47 +77,6 @@
    <property name="text">
     <string>Studiengänge</string>
    </property>
-  </widget>
-  <widget class="QListWidget" name="listWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>50</y>
-     <width>201</width>
-     <height>221</height>
-    </rect>
-   </property>
-   <property name="showDropIndicator" stdset="0">
-    <bool>true</bool>
-   </property>
-   <property name="layoutMode">
-    <enum>QListView::Batched</enum>
-   </property>
-   <item>
-    <property name="text">
-     <string>Ingenieurinformatik</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Angewandte Informatik</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Bauingenieurwesen</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Computer Engineering</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Elektrotechnik</string>
-    </property>
-   </item>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
@@ -148,14 +97,113 @@
     <string>Welcome To The Chat</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>201</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Angewandte Informatik</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>201</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bauingenieurwesen</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>201</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ingenieurinformatik</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>201</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Fahrzeugtechnik</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>201</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Maschinenbau</string>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>40</y>
+     <width>731</width>
+     <height>501</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>240</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pick a room to see the messages </string>
+   </property>
+  </widget>
   <zorder>plainTextEdit</zorder>
   <zorder>listWidget</zorder>
   <zorder>label</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>listWidget_2</zorder>
+  <zorder>send</zorder>
   <zorder>label_2</zorder>
-  <zorder>listWidget</zorder>
   <zorder>label_4</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>pushButton_6</zorder>
+  <zorder>listView</zorder>
+  <zorder>label_3</zorder>
  </widget>
  <resources/>
  <connections/>

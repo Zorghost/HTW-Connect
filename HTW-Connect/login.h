@@ -17,10 +17,12 @@ class Login : public QMainWindow
 {
     Q_OBJECT
 
+
 public:
     Login(QWidget *parent = nullptr);
     ~Login();
     QString username, password ;
+    QSqlDatabase mydb;
 
 private slots:
     void on_pushButton_clicked();
@@ -30,7 +32,7 @@ private slots:
     void on_pushButton_2_clicked();
 
 private:
-    QSqlDatabase mydb;
+
     Ui::Login *ui;
     chat *chat;
     professor *professor;

@@ -12,3 +12,19 @@ professor::~professor()
 {
     delete ui;
 }
+
+void professor::on_pushButton_clicked()
+{
+    hide();
+    nachrichten = new class::nachrichten(this);
+    nachrichten->show();
+}
+
+
+void professor::on_pushButton_4_clicked()
+{
+    hide();
+    chat = new class::chat(this);
+    chat->show();
+}
+

@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QListView>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
@@ -25,11 +26,16 @@ public:
     QListWidget *listWidget;
     QLabel *label;
     QPlainTextEdit *plainTextEdit;
-    QPushButton *pushButton;
-    QListWidget *listWidget_2;
+    QPushButton *send;
     QLabel *label_2;
-    QListWidget *listWidget1;
     QLabel *label_4;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_6;
+    QListView *listView;
+    QLabel *label_3;
 
     void setupUi(QDialog *chat)
     {
@@ -47,25 +53,12 @@ public:
         plainTextEdit->setEnabled(true);
         plainTextEdit->setGeometry(QRect(260, 550, 731, 81));
         plainTextEdit->setFrameShadow(QFrame::Sunken);
-        pushButton = new QPushButton(chat);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(910, 640, 75, 24));
-        listWidget_2 = new QListWidget(chat);
-        listWidget_2->setObjectName(QString::fromUtf8("listWidget_2"));
-        listWidget_2->setGeometry(QRect(215, 31, 781, 511));
+        send = new QPushButton(chat);
+        send->setObjectName(QString::fromUtf8("send"));
+        send->setGeometry(QRect(910, 640, 75, 24));
         label_2 = new QLabel(chat);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(20, 30, 181, 16));
-        listWidget1 = new QListWidget(chat);
-        new QListWidgetItem(listWidget1);
-        new QListWidgetItem(listWidget1);
-        new QListWidgetItem(listWidget1);
-        new QListWidgetItem(listWidget1);
-        new QListWidgetItem(listWidget1);
-        listWidget1->setObjectName(QString::fromUtf8("listWidget1"));
-        listWidget1->setGeometry(QRect(10, 50, 201, 221));
-        listWidget1->setProperty("showDropIndicator", QVariant(true));
-        listWidget1->setLayoutMode(QListView::Batched);
         label_4 = new QLabel(chat);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(30, 610, 171, 16));
@@ -73,14 +66,44 @@ public:
         font.setPointSize(13);
         font.setItalic(true);
         label_4->setFont(font);
+        pushButton_2 = new QPushButton(chat);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(10, 100, 201, 24));
+        pushButton_3 = new QPushButton(chat);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(10, 130, 201, 24));
+        pushButton_4 = new QPushButton(chat);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(10, 160, 201, 24));
+        pushButton_5 = new QPushButton(chat);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setGeometry(QRect(10, 190, 201, 24));
+        pushButton_6 = new QPushButton(chat);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setGeometry(QRect(10, 220, 201, 24));
+        listView = new QListView(chat);
+        listView->setObjectName(QString::fromUtf8("listView"));
+        listView->setGeometry(QRect(260, 40, 731, 501));
+        label_3 = new QLabel(chat);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(440, 240, 401, 51));
+        QFont font1;
+        font1.setPointSize(18);
+        font1.setBold(true);
+        label_3->setFont(font1);
         plainTextEdit->raise();
         listWidget->raise();
         label->raise();
-        pushButton->raise();
-        listWidget_2->raise();
+        send->raise();
         label_2->raise();
-        listWidget->raise();
         label_4->raise();
+        pushButton_2->raise();
+        pushButton_3->raise();
+        pushButton_4->raise();
+        pushButton_5->raise();
+        pushButton_6->raise();
+        listView->raise();
+        label_3->raise();
 
         retranslateUi(chat);
 
@@ -91,24 +114,15 @@ public:
     {
         chat->setWindowTitle(QCoreApplication::translate("chat", "Dialog", nullptr));
         label->setText(QCoreApplication::translate("chat", "Connected Friends ", nullptr));
-        pushButton->setText(QCoreApplication::translate("chat", "send", nullptr));
+        send->setText(QCoreApplication::translate("chat", "send", nullptr));
         label_2->setText(QCoreApplication::translate("chat", "Studieng\303\244nge", nullptr));
-
-        const bool __sortingEnabled = listWidget1->isSortingEnabled();
-        listWidget1->setSortingEnabled(false);
-        QListWidgetItem *___qlistwidgetitem = listWidget1->item(0);
-        ___qlistwidgetitem->setText(QCoreApplication::translate("chat", "Ingenieurinformatik", nullptr));
-        QListWidgetItem *___qlistwidgetitem1 = listWidget1->item(1);
-        ___qlistwidgetitem1->setText(QCoreApplication::translate("chat", "Angewandte Informatik", nullptr));
-        QListWidgetItem *___qlistwidgetitem2 = listWidget1->item(2);
-        ___qlistwidgetitem2->setText(QCoreApplication::translate("chat", "Bauingenieurwesen", nullptr));
-        QListWidgetItem *___qlistwidgetitem3 = listWidget1->item(3);
-        ___qlistwidgetitem3->setText(QCoreApplication::translate("chat", "Computer Engineering", nullptr));
-        QListWidgetItem *___qlistwidgetitem4 = listWidget1->item(4);
-        ___qlistwidgetitem4->setText(QCoreApplication::translate("chat", "Elektrotechnik", nullptr));
-        listWidget1->setSortingEnabled(__sortingEnabled);
-
         label_4->setText(QCoreApplication::translate("chat", "Welcome To The Chat", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("chat", "Angewandte Informatik", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("chat", "Bauingenieurwesen", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("chat", "Ingenieurinformatik", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("chat", "Fahrzeugtechnik", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("chat", "Maschinenbau", nullptr));
+        label_3->setText(QCoreApplication::translate("chat", "Pick a room to see the messages ", nullptr));
     } // retranslateUi
 
 };

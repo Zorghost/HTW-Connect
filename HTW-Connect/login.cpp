@@ -53,28 +53,9 @@ void Login::on_pushButton_clicked()
         }
         if(count==1)
         {
-            QString d = "professor" ;
-            QSqlQuery qry1;
-            if(qry1.exec("select * from users where username='"+username+"'and type='"+d+"'"))
-            {
-                int count1 = 0 ;
-                while(qry1.next())
-                {
-                    count1++;
-                }
-                if(count1==1)
-         {
-             hide();
-             professor = new class::professor(this);
-             professor->show();
-         }
-        else
-         {
-             hide();
-             student = new class::student(this);
-            student->show();
-         }
-           }
+            hide();
+            memo = new class::Memo(this);
+            memo->show();
         }
         else {
         QMessageBox::information(this , tr("Message"), tr("wrong or empty password/username"));

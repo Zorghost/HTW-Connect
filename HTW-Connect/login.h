@@ -1,8 +1,6 @@
 #ifndef LOGIN_H
 #define LOGIN_H
-#include "chat.h"
-#include "professor.h"
-#include "student.h"
+#include "Memo.h"
 #include <QMainWindow>
 #include <QtSql>
 #include <QDebug>
@@ -34,9 +32,7 @@ private slots:
 private:
 
     Ui::Login *ui;
-    chat *chat;
-    professor *professor;
-    student *student;
+    Memo *memo;
 
 
 
